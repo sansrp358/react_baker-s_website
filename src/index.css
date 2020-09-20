@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Carter One', cursive;
+}
+.navbar{
+  background-color: #fff !important;
+}
+/* body{
+  background-color: ;
+} */
+
+
+.navbar-brand{
+  font-size: 1.9rem !important;
+  color: #565387 !important;
+}
+.navbar a{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.menu_active{
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+  color: #111;
+}
+.navbar a:hover{
+  color: #3498db !important;
+}
+
+#header{
+  width: 100%;
+  height: 80vh;
+  margin-top: 50px;
+}
+
+#header h1{
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+}
+
+#header .brand_name{
+  color: #3498db;
+}
+
+#header h2{
+  color: #484848;
+  font-size: 24px;
+}
+#header .btn-get-started{
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+#header .btn-get-started:hover{
+  color: white;
+  background: #3498db;
+}
+.header_img{
+  text-align: right;
+}
+#header .animated{
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+.menu:hover{
+  transition: 0.7s;
+  transform: scale(1.1);
+  border: 5px solid #3498db;
+}
+.service_body{
+  background: #111;
+}
+@-webkit-keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-0px);
+  }
+}
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-0px);
+  }
+}
+.contact-info{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+
+}
+.card_body{
+  background: #2f3542;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+
+}
+.card-icon{
+  font-size: 20px;
+  background: #3498db;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+
+
+}
+.card_body:hover .card-icon{
+  background: none;
+  color:#3498db;
+  transform: scale(1.6);
+}
+.card_body p{
+  margin-top: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+.card_body:hover p{
+  max-height: 40px;
+  opacity: 1;
+
+}
+@media (max-width:991px){
+  .navbar-brand{
+    font-size: 1.5rem !important;
+  }
+  .menu_active{
+    font-weight: bold;
+    border-bottom: none;
+  }
+}
+@media screen and (max-width:991px){
+  .contact-info{
+    flex-direction: column;
+  }
+  .card_body{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+
+  }
+}
+
